@@ -143,3 +143,10 @@ To remove `deb2rpm`, run:
 ## 📄 License
 
 This project is open-source and licensed under the [MIT License](LICENSE).
+
+---
+
+## 👥 Contributors & Acknowledgments
+
+- **[FAKERH0G](https://github.com/FAKERH0G)** — Creator & Maintainer
+- **Google Antigravity & Gemini** — Pair programming, architecture, and UI development

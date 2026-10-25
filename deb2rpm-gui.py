@@ -3,7 +3,7 @@
 deb2rpm-gui: A native Fedora GUI and CLI utility to convert Debian (.deb)
 packages into RPM (.rpm) packages using alien and fakeroot.
 
-Author: FAKERH0G
+Authors: FAKERH0G, Google Antigravity & Gemini
 License: MIT
 """
 
