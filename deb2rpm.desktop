@@ -1,0 +1,12 @@
+[Desktop Entry]
+Name=DEB to RPM Converter
+Comment=Convert Debian packages (.deb) to RPM packages (.rpm)
+GenericName=Package Converter
+Exec=deb2rpm-gui %F
+Icon=deb2rpm
+Terminal=false
+Type=Application
+Categories=Utility;
+MimeType=application/vnd.debian.binary-package;application/x-deb;application/x-debian-package;
+Keywords=deb;rpm;convert;alien;fedora;package;installer;
+StartupNotify=true

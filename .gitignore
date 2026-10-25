@@ -1,0 +1,10 @@
+__pycache__/
+*.py[cod]
+*$py.class
+*.deb
+*.rpm
+*.tar.gz
+build/
+dist/
+*.egg-info/
+.pytest_cache/

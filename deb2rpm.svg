@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#282c34"/>
+      <stop offset="100%" stop-color="#1b1d23"/>
+    </linearGradient>
+    <linearGradient id="debGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ff3366"/>
+      <stop offset="100%" stop-color="#b8003a"/>
+    </linearGradient>
+    <linearGradient id="rpmGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4aa3df"/>
+      <stop offset="100%" stop-color="#1f5898"/>
+    </linearGradient>
+    <linearGradient id="arrowGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ff3366"/>
+      <stop offset="50%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#4aa3df"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="4" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+
+  <!-- Base Plate -->
+  <rect x="6" y="6" width="116" height="116" rx="26" ry="26" fill="url(#bgGrad)" stroke="#3e4451" stroke-width="2" filter="url(#shadow)"/>
+
+  <!-- Left Package (.deb) -->
+  <g transform="translate(16, 26)">
+    <!-- Package box -->
+    <rect x="0" y="8" width="38" height="50" rx="7" fill="url(#debGrad)" filter="url(#shadow)"/>
+    <!-- Box flap / lid -->
+    <path d="M0 16 L19 24 L38 16 L38 12 L19 4 L0 12 Z" fill="#ff6b8b" opacity="0.85"/>
+    <path d="M19 24 L19 58" stroke="#7a0026" stroke-width="1.8" opacity="0.6"/>
+    <!-- DEB text -->
+    <rect x="5" y="34" width="28" height="16" rx="4" fill="#ffffff" opacity="0.95"/>
+    <text x="19" y="46" font-family="system-ui, -apple-system, sans-serif" font-size="9" font-weight="900" fill="#b8003a" text-anchor="middle">DEB</text>
+  </g>
+
+  <!-- Right Package (.rpm) -->
+  <g transform="translate(74, 26)">
+    <!-- Package box -->
+    <rect x="0" y="8" width="38" height="50" rx="7" fill="url(#rpmGrad)" filter="url(#shadow)"/>
+    <!-- Box flap / lid -->
+    <path d="M0 16 L19 24 L38 16 L38 12 L19 4 L0 12 Z" fill="#7ac5f8" opacity="0.85"/>
+    <path d="M19 24 L19 58" stroke="#123560" stroke-width="1.8" opacity="0.6"/>
+    <!-- RPM text -->
+    <rect x="5" y="34" width="28" height="16" rx="4" fill="#ffffff" opacity="0.95"/>
+    <text x="19" y="46" font-family="system-ui, -apple-system, sans-serif" font-size="9" font-weight="900" fill="#1f5898" text-anchor="middle">RPM</text>
+  </g>
+
+  <!-- Modern Transfer / Convert Arrow -->
+  <g transform="translate(52, 46)">
+    <!-- Glow circle behind arrow -->
+    <circle cx="12" cy="12" r="14" fill="#282c34" stroke="#4c566a" stroke-width="1.5"/>
+    <path d="M6 12 L18 12 M13 7 L18 12 L13 17" fill="none" stroke="url(#arrowGrad)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <!-- Bottom decorative status dots / accent bar -->
+  <g transform="translate(0, 96)">
+    <rect x="24" y="8" width="80" height="3" rx="1.5" fill="url(#arrowGrad)" opacity="0.7"/>
+    <circle cx="64" cy="9.5" r="3.5" fill="#50fa7b"/>
+  </g>
+</svg>
